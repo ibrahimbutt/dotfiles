@@ -1,0 +1,10 @@
+[user]
+	name = Ibrahim Butt
+	email = ibrahimbutt1993@gmail.com
+	username = ibrahimbutt
+	
+[init]
+	defaultBranch = main
+	
+[web]
+	browser = google-chrome
