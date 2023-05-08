@@ -14,7 +14,8 @@ sync:
 	@[ -f ~/.gitconfig ] || ln -s $(CURRENT_DIR)gitconfig ~/.gitconfig
 
 	@brew bundle --file=$(CURRENT_DIR)Brewfile
-	
+	@rustup-init -y
+
 	@bash $(CURRENT_DIR)macos/dock.sh
 	@bash $(CURRENT_DIR)macos/macos.sh
 	

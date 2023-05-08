@@ -15,7 +15,7 @@ brew "httpie"
 brew "maven"
 brew "node"
 brew "postgresql@14"
-brew "rust"
+brew "rustup-init"
 brew "sqlite"
 
 # eq `brew install --cask <name>`
