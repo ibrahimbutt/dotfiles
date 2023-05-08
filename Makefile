@@ -6,12 +6,13 @@ all: sync
 sync:
 	@touch ~/.hushlogin
 	@touch ~/.zshrc
-	
+
 	@mkdir -p ~/Developer/
-	
+
 	@echo "alias dev='cd ~/Developer'" >> ~/.zshrc
 	
-	@[ -f ~/.gitconfig ] || ln -s $(CURRENT_DIR)gitconfig ~/.gitconfig
+	@[ -f ~/.gitconfig ] || ln -s $(CURRENT_DIR)git/gitconfig ~/.gitconfig
+	@[ -f ~/.gitignore ] || ln -s $(CURRENT_DIR)git/gitignore ~/.gitignore
 
 	@brew bundle --file=$(CURRENT_DIR)Brewfile
 	@rustup-init -y
